@@ -3,8 +3,10 @@
 
 const changeSomething = () => {
   let something = "";
+  let counter = 0;
   return () => {
-    something += " word";
+    counter++;
+    something += ` word${counter}`;
     return something;
   };
 };
